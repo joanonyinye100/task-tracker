@@ -6,7 +6,7 @@
     <title>Personal Task Tracker</title>
     
     <style>
-        *{
+       *{
             
             box-sizing: border-box;
         }
@@ -25,15 +25,39 @@
         ul {
             list-style: none;
             padding: 0;
+
         }
-
-
+        
+        
         li {
-            margin: 5px 0;
-            color: white;
-        }
+     margin: 5px 0;
+     color: white;
+    background-color:black;
+     margin: 5px;
+     padding: 5px;
+    width: 100%;
+    text-align: start;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 
+li button{
+    float: right;
+   min-width: 25%;
+    background-color: white;
+    min-height: 100%;
+    padding: 5px;
+   
+}
+li input[type= "checkbox"]{
+ margin-left: 55%;
+}
 
+        
+        
         .completed {
             text-decoration: line-through;
             color: red;
@@ -41,10 +65,10 @@
         .container{
             padding: 20px;
             border: 1px solid pink;
-            background-color: #3f3f91;          
+            background-color: #1f1fe2;          
             border-top-left-radius: 30px;
             border-bottom-right-radius: 50px;
-            width: 70%;
+            width: 90%;
             height: fit-content;
             margin-top: 10%;           
             font-size: 20px;
@@ -52,20 +76,28 @@
             
             
         }
-        input, button{
-            padding: 5px;
-            border-radius: 10px;
-            border: 2px solid #f7f79f;
-            margin: 3px;
-        }
+        #task-input{
+      padding: 7px;
+      border-radius: 2px;
+      margin: 3px;
+     width: 80%;
+      border: 2px solid gray;
+}
+
         h1 {
             color: black;
             text-align: center;
             
         }
+       
         button:hover{
             background-color: rgb(61, 61, 123);
         }
+        #add-task{
+      padding: 7px;
+       background-color: black;
+      color: white;
+}
         
     </style>
 </head>
@@ -87,7 +119,7 @@
              </ul>
              
              <div>
-                 <label class="text-white">Show completed tasks: <input type="checkbox" id="show-completed"></label>
+                <label>Show completed tasks: <input type="checkbox" id="show-completed"></label>
              </div>
          
             </div>
